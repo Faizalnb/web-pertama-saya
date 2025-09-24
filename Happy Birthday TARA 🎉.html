@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)file:///C:/Users/Lenovo%20LOQ/OneDrive/Desktop/belajar%20coding/Happy%20Birthday%20TARA%20%F0%9F%8E%89_files/Happy%20Birthday%20TARA%20%F0%9F%8E%89.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday TARA 🎉</title>
+  <style>
+    :root{
+      --pink-1:#fff0f6;
+      --pink-2:#ff9ccf;
+      --accent:#ff5da2;
+      --text:#3b1a2b;
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0}
+    body{
+      background:radial-gradient(circle at 10% 10%, #ffeef8, var(--pink-1) 20%, #ffe3f5 40%),
+                 linear-gradient(180deg,#fff 0%, #fff7fb 100%);
+      display:flex;align-items:center;justify-content:center;padding:28px
+    }
+    .card{width:100%;max-width:980px;background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);
+      border-radius:20px;box-shadow:0 18px 50px rgba(200,80,140,0.12);
+      padding:28px;position:relative;overflow:hidden}
+    .card::before{content:'';position:absolute;inset:0;
+      background-image:radial-gradient(circle at 20% 20%, rgba(255,255,255,0.2) 0, rgba(255,255,255,0) 20%),
+                       linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+      opacity:0.7}
+    header{display:flex;align-items:center;gap:20px}
+    .badge{width:86px;height:86px;border-radius:16px;
+      background:linear-gradient(135deg,var(--pink-2),var(--accent));
+      display:flex;align-items:center;justify-content:center;color:#fff;
+      font-weight:700;font-size:22px;box-shadow:0 8px 30px rgba(255,93,162,0.18)}
+    h1{margin:0;font-size:40px;color:var(--text);line-height:1}
+    p.lead{margin:6px 0 0;color:#7a4a63}
+    .content{display:grid;grid-template-columns:320px 1fr;gap:22px;margin-top:22px;align-items:start}
+    .photo{border-radius:16px;overflow:hidden;border:8px solid rgba(255,255,255,0.6);
+      width:320px;box-shadow:0 10px 30px rgba(200,80,140,0.08);
+      background:linear-gradient(180deg,#fff,#fff0f6)}
+    .photo img{
+      display:block;width:60%;height:60%;object-fit:cover;margin:0 auto;
+    }
+    .right{display:flex;flex-direction:column;gap:12px}
+    .message{background:linear-gradient(180deg,#fff,#fff5fb);
+      padding:18px;border-radius:12px;
+      box-shadow:0 8px 20px rgba(200,80,140,0.04)}
+    .message h2{margin:0;color:var(--accent);font-size:28px}
+    .message p{margin:8px 0 0;color:#5a2f42}
+    .actions{
+      display:flex;gap:10px;margin-top:6px;
+      position:relative;z-index:1000; /* tombol di atas layer lain */
+    }
+    .btn{padding:10px 14px;border-radius:12px;border:none;cursor:pointer;font-weight:600}
+    .btn-pink{background:var(--accent);color:#fff}
+    .btn-soft{background:transparent;border:1px dashed rgba(120,40,80,0.12);color:var(--accent)}
+    .plush{position:absolute;pointer-events:none}
+    .plush.pl1{left:-30px;top:40px;width:140px;transform:rotate(-10deg);opacity:0.95}
+    .plush.pl2{right:-40px;bottom:20px;width:160px;transform:rotate(8deg);opacity:0.95}
+    .plush.pl3{left:20px;bottom:-30px;width:120px;opacity:0.9}
+    .confetti{position:absolute;inset:0;pointer-events:none}
+    footer{margin-top:18px;text-align:center;color:#b76d8a;font-size:14px}
+    @media (max-width:880px){
+      .content{grid-template-columns:1fr;}
+      .photo{width:100%;height:360px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="card">
+    <header>
+      <div class="badge">TARA 🎂</div>
+      <div>
+        <h1>Happy Birthday, HAMAMA AT-THAHIRAH💖</h1>
+        <p class="lead">Semoga hari-harimu selalu manis, penuh tawa dan pelukan hangat.</p>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="photo">
+        <img src="./Happy Birthday TARA 🎉_files/WhatsApp Image 2025-07-27 at 06.12.56 (2).jpeg" alt="Foto TARA">
+      </div>
+
+      <div class="right">
+        <div class="message">
+          <h2>Untuk TARA — Dengan cinta 💖</h2>
+          <p>Semoga semua impianmu menjadi nyata dan setiap langkah membawa kebahagiaan. Nikmati kue, peluk boneka, dan hari spesial ini!</p>
+          <div class="actions">
+            <button type="button" class="btn btn-pink" onclick="shootConfetti()">Rayakan 🎉</button>
+            <button type="button" class="btn btn-soft" onclick="toggleMusic()">Putar Musik</button>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:center;">
+          <div style="flex:1;background:linear-gradient(90deg,#fff0f6,#fff);
+                      padding:12px;border-radius:12px;text-align:center;
+                      box-shadow:inset 0 2px 6px rgba(255,93,162,0.02)">
+            <strong>Usia:</strong> 17 🎈
+          </div>
+          <div style="width:120px;background:linear-gradient(180deg,#fff,#fff8fb);
+                      padding:10px;border-radius:12px;text-align:center">
+            Cake time 🍰
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Peluk boneka unicornmu dan nikmati harimu — dari faizal 💕</footer>
+
+    <!-- plush SVG decorations -->
+    <div class="plush pl1"> 
+      <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <ellipse cx="100" cy="120" rx="54" ry="48" fill="#ffd7e8"></ellipse>
+          <ellipse cx="70" cy="52" rx="18" ry="36" fill="#ffd7e8"></ellipse>
+          <ellipse cx="130" cy="42" rx="18" ry="36" fill="#ffd7e8"></ellipse>
+          <circle cx="90" cy="110" r="6" fill="#fff" opacity="0.6"></circle>
+          <circle cx="110" cy="110" r="6" fill="#fff" opacity="0.6"></circle>
+          <circle cx="90" cy="105" r="4" fill="#3b1a2b"></circle>
+          <circle cx="110" cy="105" r="4" fill="#3b1a2b"></circle>
+          <path d="M88 130 q12 10 24 0" stroke="#3b1a2b" stroke-width="3" fill="none" stroke-linecap="round"></path>
+          <rect x="66" y="78" rx="10" ry="10" width="68" height="40" fill="#fff0f6"></rect>
+          <text x="100" y="102" font-size="18" text-anchor="middle" fill="#ff5da2">Emo</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="plush pl2">
+      <svg viewBox="0 0 200 200" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <ellipse cx="100" cy="110" rx="60" ry="48" fill="#ffe6f2"></ellipse>
+          <ellipse cx="70" cy="50" rx="20" ry="36" fill="#ffe6f2"></ellipse>
+          <ellipse cx="132" cy="48" rx="20" ry="36" fill="#ffe6f2"></ellipse>
+          <circle cx="86" cy="100" r="5" fill="#3b1a2b"></circle>
+          <circle cx="114" cy="100" r="5" fill="#3b1a2b"></circle>
+          <path d="M88 126 q12 10 24 0" stroke="#3b1a2b" stroke-width="3" fill="none" stroke-linecap="round"></path>
+        </g>
+      </svg>
+    </div>
+
+    <div class="plush pl3">
+      <svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle cx="100" cy="90" r="44" fill="#ffd9ee"></circle>
+          <ellipse cx="76" cy="54" rx="12" ry="26" fill="#ffd9ee"></ellipse>
+          <ellipse cx="124" cy="54" rx="12" ry="26" fill="#ffd9ee"></ellipse>
+          <circle cx="92" cy="86" r="4" fill="#3b1a2b"></circle>
+          <circle cx="108" cy="86" r="4" fill="#3b1a2b"></circle>
+          <path d="M92 110 q8 6 16 0" stroke="#3b1a2b" stroke-width="2.5" fill="none"></path>
+        </g>
+      </svg>
+    </div>
+
+    <canvas id="confetti" class="confetti" width="859" height="470"></canvas>
+
+    <!-- Audio: ganti path ke file lokal yang sama folder -->
+    <audio id="song" loop="" src="hbd.mp3"></audio>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    const card = document.getElementById('card');
+    let W, H;
+    function resize(){ W = canvas.width = card.offsetWidth; H = canvas.height = card.offsetHeight; }
+    window.addEventListener('resize', resize); resize();
+
+    function random(min,max){return Math.random()*(max-min)+min}
+    class Confetti{
+      constructor(){
+        this.x = random(0,W); this.y = random(-H,0);
+        this.r = random(6,12); this.d = random(1,3);
+        this.color = ['#ff9ccf','#ffd7e8','#ff5da2','#ffd9ee','#ffc0e6'][Math.floor(random(0,5))];
+        this.tilt = random(-10,10);
+      }
+      update(){
+        this.y += this.d + this.r/20;
+        this.x += Math.sin(this.y/20)*1.5;
+        this.tilt += 0.1;
+        if(this.y>H+20){ this.y = random(-H,0); this.x = random(0,W); }
+      }
+      draw(){
+        ctx.save(); ctx.translate(this.x,this.y);
+        ctx.rotate(this.tilt*Math.PI/180);
+        ctx.fillStyle=this.color;
+        ctx.fillRect(-this.r/2,-this.r/2,this.r,this.r*0.6);
+        ctx.restore();
+      }
+    }
+
+    let confs = [];
+    function createConfetti(n=80){ confs = []; for(let i=0;i<n;i++) confs.push(new Confetti()); }
+    function animate(){
+      ctx.clearRect(0,0,W,H);
+      confs.forEach(c=>{c.update();c.draw();});
+      requestAnimationFrame(animate);
+    }
+    createConfetti(100); animate();
+
+    function shootConfetti(){
+      createConfetti(220);
+      setTimeout(()=>createConfetti(40),2000);
+    }
+
+    const song = document.getElementById('song');
+    let musicOn = false;
+    function toggleMusic(){
+      if(musicOn){
+        song.pause();
+        musicOn = false;
+      } else {
+        song.play();
+        musicOn = true;
+      }
+    }
+
+    document.addEventListener('keydown', e=>{ if(e.key==='Enter') shootConfetti(); });
+    setTimeout(()=>shootConfetti(),700);
+  </script>
+
+
+</body></html>
